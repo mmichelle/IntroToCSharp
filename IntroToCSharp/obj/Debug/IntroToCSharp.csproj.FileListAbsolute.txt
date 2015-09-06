@@ -1,0 +1,28 @@
+c:\users\melizzle\documents\visual studio 2015\Projects\IntroToCSharp\IntroToCSharp\bin\Debug\IntroToCSharp.exe.config
+c:\users\melizzle\documents\visual studio 2015\Projects\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.csprojResolveAssemblyReference.cache
+c:\users\melizzle\documents\visual studio 2015\Projects\IntroToCSharp\IntroToCSharp\obj\Debug\MainWindow.g.cs
+c:\users\melizzle\documents\visual studio 2015\Projects\IntroToCSharp\IntroToCSharp\obj\Debug\App.g.cs
+c:\users\melizzle\documents\visual studio 2015\Projects\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp_MarkupCompile.cache
+c:\users\melizzle\documents\visual studio 2015\Projects\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp_MarkupCompile.lref
+c:\users\melizzle\documents\visual studio 2015\Projects\IntroToCSharp\IntroToCSharp\bin\Debug\IntroToCSharp.exe
+c:\users\melizzle\documents\visual studio 2015\Projects\IntroToCSharp\IntroToCSharp\bin\Debug\IntroToCSharp.pdb
+c:\users\melizzle\documents\visual studio 2015\Projects\IntroToCSharp\IntroToCSharp\obj\Debug\MainWindow.baml
+c:\users\melizzle\documents\visual studio 2015\Projects\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.g.resources
+c:\users\melizzle\documents\visual studio 2015\Projects\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.Properties.Resources.resources
+c:\users\melizzle\documents\visual studio 2015\Projects\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.csproj.GenerateResource.Cache
+c:\users\melizzle\documents\visual studio 2015\Projects\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.exe
+c:\users\melizzle\documents\visual studio 2015\Projects\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.pdb
+E:\IntroToCSharp\IntroToCSharp\bin\Debug\IntroToCSharp.exe.config
+E:\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.exe
+E:\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.pdb
+E:\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.csprojResolveAssemblyReference.cache
+E:\IntroToCSharp\IntroToCSharp\obj\Debug\MainWindow.g.cs
+E:\IntroToCSharp\IntroToCSharp\obj\Debug\App.g.cs
+E:\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp_MarkupCompile.cache
+E:\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp_MarkupCompile.lref
+E:\IntroToCSharp\IntroToCSharp\bin\Debug\IntroToCSharp.exe
+E:\IntroToCSharp\IntroToCSharp\bin\Debug\IntroToCSharp.pdb
+E:\IntroToCSharp\IntroToCSharp\obj\Debug\MainWindow.baml
+E:\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.g.resources
+E:\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.Properties.Resources.resources
+E:\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.csproj.GenerateResource.Cache
