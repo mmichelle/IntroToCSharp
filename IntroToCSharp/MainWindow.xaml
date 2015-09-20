@@ -25,7 +25,6 @@
                                     </FlowDocument>
                                 </RichTextBox>
                                 <TextBox x:Name="textBox_warnings" HorizontalAlignment="Left" Height="61" Margin="367,13,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="80" IsReadOnly="True" VerticalScrollBarVisibility="Auto"/>
-
                             </Grid>
                         </TabItem>
                         <TabItem Header="Exercise 2">
@@ -46,6 +45,30 @@
                                 <Label x:Name="SumLabel" Content="Sum" HorizontalAlignment="Left" Margin="104,95,0,0" VerticalAlignment="Top"/>
                                 <Label x:Name="ProductLabel" Content="Product" HorizontalAlignment="Left" Margin="104,121,0,0" VerticalAlignment="Top"/>
                                 <Label x:Name="WarningLabel" Content="" HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top"/>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Assignment 2">
+                <Grid Background="#FFE5E5E5">
+                    <TabControl x:Name="tabControl2" HorizontalAlignment="Left" Height="252" Margin="10,10,0,0" VerticalAlignment="Top" Width="471">
+                        <TabItem Header="Exercise 1">
+                            <Grid Background="#FFE5E5E5">
+                                <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Please enter 3 numbers in the line below." VerticalAlignment="Top"/>
+                                <TextBox x:Name="m_editThreeEntry" HorizontalAlignment="Left" Height="23" Margin="10,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="217" KeyDown="m_editThreeEntry_KeyDown" LostFocus="m_editThreeEntry_LostFocus"/>
+                                <TextBlock x:Name="m_editFloatAvgOut" HorizontalAlignment="Left" Margin="10,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                <TextBlock x:Name="m_editIntAvgOut" HorizontalAlignment="Left" Margin="10,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                <TextBlock x:Name="m_editFloatDiffOut" HorizontalAlignment="Left" Margin="10,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Exercise 2">
+                            <Grid Background="#FFE5E5E5">
+                                <TextBlock x:Name="FullNameStatic" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Please enter your full name." VerticalAlignment="Top"/>
+                                <TextBox x:Name="m_editFullName" HorizontalAlignment="Left" Height="23" Margin="10,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="445" LostFocus="m_editFullName_LostFocus" KeyDown="m_editFullName_KeyDown"/>
+                                <Label x:Name="label6" Content="Title" HorizontalAlignment="Left" Margin="10,54,0,0" VerticalAlignment="Top"/>
+                                <ListBox x:Name="m_listTitles" HorizontalAlignment="Left" Height="100" Margin="10,85,0,0" VerticalAlignment="Top" Width="100" SelectionChanged="m_listTitles_SelectionChanged"/>
+                                <TextBlock x:Name="m_textOutput" HorizontalAlignment="Left" Height="100" Margin="140,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="315"/>
                             </Grid>
                         </TabItem>
                     </TabControl>

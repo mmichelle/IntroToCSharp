@@ -26,11 +26,13 @@ namespace IntroToCSharp
     public partial class MainWindow : Window
     {
         AssignmentOne assignmentOne;
+        AssignmentTwo assignmentTwo;
         
         public MainWindow()
         {
             InitializeComponent();
             assignmentOne = new AssignmentOne();
+            assignmentTwo = new AssignmentTwo();
             UpdatePyramidDisplay();
             textBox_symbol.Text = assignmentOne.one.pyramidSymbol.ToString();
             textBox_size.Text = assignmentOne.one.pyramidSize.ToString();
@@ -39,6 +41,9 @@ namespace IntroToCSharp
             textBox_three.Text = assignmentOne.three.numberThree.ToString();
             SumLabel.Content = "The sum is " + assignmentOne.three.sum.ToString() + ".";
             ProductLabel.Content = "The product is " + assignmentOne.three.product.ToString() + ".";
+            m_editThreeEntry.Text = "";
+            for (int ii = 0; ii < (int)Titles.eTitles.TOTAL_TITLES; ii++)
+                m_listTitles.Items.Add(Titles.m_aStrTitles[ii]);
         }
 
         private void textBox_size_KeyDown(object sender, KeyEventArgs e)
@@ -237,6 +242,63 @@ namespace IntroToCSharp
             }
             else
                 textBox_age.Text = "Please enter a number.";
+        }
+
+        private void m_editThreeEntry_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                assignmentTwo.one.input = m_editThreeEntry.Text;
+
+                m_editFloatAvgOut.Text = assignmentTwo.one.floatingAverageString();
+
+                m_editIntAvgOut.Text = assignmentTwo.one.integerAverageString();
+
+                m_editFloatDiffOut.Text = assignmentTwo.one.floatDifferenceString();
+            }
+        }
+
+        private void m_editThreeEntry_LostFocus(object sender, RoutedEventArgs e)
+        {
+            assignmentTwo.one.input = m_editThreeEntry.Text;
+
+            m_editFloatAvgOut.Text = assignmentTwo.one.floatingAverageString();
+
+            m_editIntAvgOut.Text = assignmentTwo.one.integerAverageString();
+
+            m_editFloatDiffOut.Text = assignmentTwo.one.floatDifferenceString();
+        }
+
+        private void m_listTitles_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            int input = m_listTitles.SelectedIndex;
+            if (-1 != input)
+                assignmentTwo.two.title = Titles.m_aStrTitles[input];
+            else
+                assignmentTwo.two.title = "";
+
+            if ("" != m_editFullName.Text)
+                UpdateNameOutputWindow();
+        }
+
+        private void m_editFullName_LostFocus(object sender, RoutedEventArgs e)
+        {
+            assignmentTwo.two.input = m_editFullName.Text;
+            UpdateNameOutputWindow();
+        }
+
+        private void UpdateNameOutputWindow()
+        {
+            m_textOutput.Text = assignmentTwo.two.outputText();
+        }
+
+        private void m_editFullName_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (Key.Enter == e.Key)
+            {
+                assignmentTwo.two.input = m_editFullName.Text;
+                UpdateNameOutputWindow();
+            }
         }
     }
 }
