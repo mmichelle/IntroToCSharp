@@ -67,7 +67,10 @@
     <Compile Include="asOne_ExerciseThree.cs" />
     <Compile Include="AssignmentOne.cs" />
     <Compile Include="asOne_ExerciseTwo.cs" />
+    <Compile Include="AssignmentThree.cs" />
     <Compile Include="AssignmentTwo.cs" />
+    <Compile Include="asThree_ExerciseOne.cs" />
+    <Compile Include="asThree_ExerciseTwo.cs" />
     <Compile Include="asTwo_ExerciseOne.cs" />
     <Compile Include="asTwo_ExerciseTwo.cs" />
     <Compile Include="MainWindow.xaml.cs">
