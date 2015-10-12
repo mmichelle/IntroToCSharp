@@ -373,22 +373,20 @@ namespace IntroToCSharp
                     {
                         assignmentThree.setInput(iInput);
                         m_editAsThreeETwoStatus.Text = "";
-                        m_listBoxAsThreeETwo.SelectedIndex = iInput;
-                        String listItem = "";
-                       // String listItem = ((ListBoxItem)(m_listBoxAsThreeETwo.SelectedItem)).Content.ToString();
 
-                        listItem = (iInput.ToString()+ "  \t   " + (assignmentThree.getInput(iInput)-1).ToString());
-                        if (m_listBoxAsThreeETwo.Items.Contains(listItem))
+                        m_listBoxAsThreeETwo.Items.Clear();
+                            
+                        for (int i = 0; i < 11; i++)
                         {
-                            m_listBoxAsThreeETwo.SelectedItem = listItem;
-                            listItem = (iInput.ToString() + "  \t   " + assignmentThree.getRow(iInput));
-                            m_listBoxAsThreeETwo.Items[m_listBoxAsThreeETwo.SelectedIndex] = listItem;
-                        }
-                        else
-                        {
-                            m_listBoxAsThreeETwo.Items.Add((iInput.ToString() + "  \t   " + assignmentThree.getRow(iInput)));
-                        }
-                        
+                            if (0 < assignmentThree.checkValue(i)) //if the count is greater than 0,
+                            {//then add it to the list
+                                m_listBoxAsThreeETwo.Items.Add(assignmentThree.getReportString(i));
+                            }
+                            else if (0 == i) //create Number       Count headers
+                            {
+                                m_listBoxAsThreeETwo.Items.Add(assignmentThree.getReportString(i));
+                            }
+                        }                        
                     }
                     else
                         m_editAsThreeETwoStatus.Text = "Your number must be between 1 and 10.";

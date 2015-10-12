@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace IntroToCSharp
 {
@@ -41,14 +38,22 @@ namespace IntroToCSharp
             return m_eOne.oddOutput;
         }
 
+        //set the LastValue, increment the count, update the string
         public void setInput(int input)
         {
             m_eTwo.integer = input;
         }
 
+        //get the count at the LastValue
         public int getInput(int input)
         {
             return m_eTwo.integer;
+        }
+
+        //check the count in the sorted dictionary
+        public int checkValue(int input)
+        {
+            return m_eTwo.checkValue(input);
         }
 
         public String getRow(int input)
@@ -59,16 +64,30 @@ namespace IntroToCSharp
 
             return output;
         }
+
+        //reset the count values
         public void clearInput()
         {
             SortedDictionary<int, int> sd;
             sd = new SortedDictionary<int, int>();
+
+            SortedDictionary<int, String> sdStrings;
+            sdStrings = new SortedDictionary<int, string>();
+
             for (int i = 0; i < 11; i++)
             {
                 sd[i] = 0;
+                sdStrings[i] = i.ToString() + "   \t   0";
             }
 
             m_eTwo.sdInteger = sd;
+            m_eTwo.sdReportStrings = sdStrings;
+        }
+
+        //return the string value to be displayed to the user
+        public String getReportString(int index)
+        {
+            return m_eTwo.getReportString(index);
         }
     }
 }
