@@ -74,6 +74,39 @@
                     </TabControl>
                 </Grid>
             </TabItem>
+            <TabItem Header="Assignment 3">
+                <Grid Background="#FFE5E5E5">
+                    <TabControl x:Name="tabControl3" HorizontalAlignment="Left" Height="252" Margin="10,10,0,0" VerticalAlignment="Top" Width="471">
+                        <TabItem Header="Exercise 1">
+                            <Grid Background="#FFE5E5E5">
+                                <Label x:Name="label7" Content="Enter a minimum integer:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                                <Label x:Name="label8" Content="Enter a maximum integer:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+                                <TextBox x:Name="m_editMinimumInteger" HorizontalAlignment="Left" Height="23" Margin="159,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120">
+                                </TextBox>
+                                <TextBox x:Name="m_editMaximumInteger" HorizontalAlignment="Left" Height="23" Margin="161,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                                <Button x:Name="m_btnSubmitIntegers" Content="Submit" HorizontalAlignment="Left" Margin="339,43,0,0" VerticalAlignment="Top" Width="75" Click="m_btnSubmitIntegers_Click"/>
+                                <TextBlock x:Name="m_staticAsThreeEOneReport" HorizontalAlignment="Left" Margin="10,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                <TextBlock x:Name="m_staticAllResult" HorizontalAlignment="Left" Margin="10,93,0,0" TextWrapping="Wrap" Text="All:" VerticalAlignment="Top" Height="18"/>
+                                <TextBlock x:Name="m_staticEvenResult" HorizontalAlignment="Left" Margin="10,111,0,0" TextWrapping="Wrap" Text="Even:" VerticalAlignment="Top" Height="18"/>
+                                <TextBlock x:Name="m_staticOddResult" HorizontalAlignment="Left" Margin="10,129,0,0" TextWrapping="Wrap" Text="Odd:" VerticalAlignment="Top" Height="18"/>
+                                <TextBlock x:Name="m_staticAll" HorizontalAlignment="Left" Margin="80,90,0,0" VerticalAlignment="Top" Width="371" TextAlignment="Right" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Disabled" TextTrimming="WordEllipsis"/>
+                                <TextBlock x:Name="m_staticEven" HorizontalAlignment="Left" Margin="80,111,0,0" VerticalAlignment="Top" Width="371" TextAlignment="Right" TextTrimming="WordEllipsis" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="True"/>
+                                <TextBlock x:Name="m_staticOdd" HorizontalAlignment="Left" Margin="80,132,0,0" VerticalAlignment="Top" Width="371" TextAlignment="Right" TextTrimming="WordEllipsis" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="True"/>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Exercise 2">
+                            <Grid Background="#FFE5E5E5">
+                                <ListBox x:Name="m_listBoxAsThreeETwo" HorizontalAlignment="Left" Height="179" Margin="10,41,0,0" VerticalAlignment="Top" Width="441" SelectedIndex="0">
+                                    <ListBoxItem Content="Number     Count" Focusable="False" IsTabStop="False"/>
+                                </ListBox>
+                                <Label x:Name="label9" Content="Enter an integer or 'q' to quit:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                                <TextBox x:Name="m_editAsThreeETwoInput" HorizontalAlignment="Left" Height="23" Margin="181,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="54" KeyDown="m_editAsThreeETwoInput_KeyDown"/>
+                                <TextBlock x:Name="m_editAsThreeETwoStatus" HorizontalAlignment="Left" Margin="240,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="211" Height="25"/>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </TabItem>
         </TabControl>
 
     </Grid>

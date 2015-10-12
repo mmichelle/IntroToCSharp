@@ -27,12 +27,14 @@ namespace IntroToCSharp
     {
         AssignmentOne assignmentOne;
         AssignmentTwo assignmentTwo;
+        AssignmentThree assignmentThree;
         
         public MainWindow()
         {
             InitializeComponent();
             assignmentOne = new AssignmentOne();
             assignmentTwo = new AssignmentTwo();
+            assignmentThree = new AssignmentThree();
             UpdatePyramidDisplay();
             textBox_symbol.Text = assignmentOne.one.pyramidSymbol.ToString();
             textBox_size.Text = assignmentOne.one.pyramidSize.ToString();
@@ -298,6 +300,108 @@ namespace IntroToCSharp
             {
                 assignmentTwo.two.input = m_editFullName.Text;
                 UpdateNameOutputWindow();
+            }
+        }
+
+        private void m_btnSubmitIntegers_Click(object sender, RoutedEventArgs e)
+        {
+            bool anyErrors = false;
+            int iMinimum = 0;
+            int iMaximum = 0;
+            if (int.TryParse(m_editMinimumInteger.Text, out iMinimum))
+            {
+                assignmentThree.setMinimum(iMinimum);
+            }
+            else
+            {
+                anyErrors = true;
+                m_staticAsThreeEOneReport.Text = "Please use integers only!";
+            }
+            if (int.TryParse(m_editMaximumInteger.Text, out iMaximum))
+            {
+                assignmentThree.setMaximum(iMaximum);
+            }
+            else
+            {
+                anyErrors = true;
+                m_staticAsThreeEOneReport.Text = "Please use integers only!";
+            }
+
+            if (!anyErrors)
+            {
+                m_staticAll.Text = assignmentThree.allResult();
+                m_staticEven.Text = assignmentThree.evenResult();
+                m_staticOdd.Text = assignmentThree.oddResult();
+            }
+            else
+            {
+                m_staticAll.Text = "";
+                m_staticEven.Text = "";
+                m_staticOdd.Text = "";
+            }
+        }
+
+        private void m_richTextAsThreeETwo_KeyDown(object sender, KeyEventArgs e)
+        {
+        }
+
+        private void resetCount()
+        {
+            int count = m_listBoxAsThreeETwo.Items.Count - 1;
+            for (int i = count; i > 0; i--)
+            {
+                m_listBoxAsThreeETwo.SelectedIndex = i;
+                m_listBoxAsThreeETwo.Items.RemoveAt(i);
+            }
+            assignmentThree.clearInput();
+        }
+
+        private void m_editAsThreeETwoInput_KeyDown(object sender, KeyEventArgs e)
+        {
+            int iInput = 0;
+            if (Key.Enter == e.Key)
+            {
+                if (m_editAsThreeETwoStatus.Text == "See final results below.")
+                {
+                    resetCount();
+                    m_editAsThreeETwoStatus.Text = "";
+                    return;
+                }
+                if (int.TryParse(m_editAsThreeETwoInput.Text, out iInput))
+                {
+                    if ((0 < iInput) && (10 >= iInput))
+                    {
+                        assignmentThree.setInput(iInput);
+                        m_editAsThreeETwoStatus.Text = "";
+                        m_listBoxAsThreeETwo.SelectedIndex = iInput;
+                        String listItem = "";
+                       // String listItem = ((ListBoxItem)(m_listBoxAsThreeETwo.SelectedItem)).Content.ToString();
+
+                        listItem = (iInput.ToString()+ "  \t   " + (assignmentThree.getInput(iInput)-1).ToString());
+                        if (m_listBoxAsThreeETwo.Items.Contains(listItem))
+                        {
+                            m_listBoxAsThreeETwo.SelectedItem = listItem;
+                            listItem = (iInput.ToString() + "  \t   " + assignmentThree.getRow(iInput));
+                            m_listBoxAsThreeETwo.Items[m_listBoxAsThreeETwo.SelectedIndex] = listItem;
+                        }
+                        else
+                        {
+                            m_listBoxAsThreeETwo.Items.Add((iInput.ToString() + "  \t   " + assignmentThree.getRow(iInput)));
+                        }
+                        
+                    }
+                    else
+                        m_editAsThreeETwoStatus.Text = "Your number must be between 1 and 10.";
+                }
+                else if ( "q" == m_editAsThreeETwoInput.Text)
+                {
+                    m_editAsThreeETwoStatus.Text = "See final results below.";
+                }
+                else
+                {
+                    m_editAsThreeETwoStatus.Text = "Your number must be between 1 and 10.";
+                }
+                m_editAsThreeETwoInput.Text = "";
             }
         }
     }

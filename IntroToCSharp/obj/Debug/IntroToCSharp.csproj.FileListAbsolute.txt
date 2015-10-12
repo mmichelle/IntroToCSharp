@@ -40,3 +40,17 @@ C:\Users\Melissa\Documents\GitHub\IntroToCSharp\IntroToCSharp\obj\Debug\MainWind
 C:\Users\Melissa\Documents\GitHub\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.g.resources
 C:\Users\Melissa\Documents\GitHub\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.Properties.Resources.resources
 C:\Users\Melissa\Documents\GitHub\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.csproj.GenerateResource.Cache
+C:\Users\Melizzle\Documents\GitHub\IntroToCSharp\IntroToCSharp\bin\Debug\IntroToCSharp.exe.config
+C:\Users\Melizzle\Documents\GitHub\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.exe
+C:\Users\Melizzle\Documents\GitHub\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.pdb
+C:\Users\Melizzle\Documents\GitHub\IntroToCSharp\IntroToCSharp\bin\Debug\IntroToCSharp.exe
+C:\Users\Melizzle\Documents\GitHub\IntroToCSharp\IntroToCSharp\bin\Debug\IntroToCSharp.pdb
+C:\Users\Melizzle\Documents\GitHub\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.csprojResolveAssemblyReference.cache
+C:\Users\Melizzle\Documents\GitHub\IntroToCSharp\IntroToCSharp\obj\Debug\MainWindow.g.cs
+C:\Users\Melizzle\Documents\GitHub\IntroToCSharp\IntroToCSharp\obj\Debug\App.g.cs
+C:\Users\Melizzle\Documents\GitHub\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp_MarkupCompile.cache
+C:\Users\Melizzle\Documents\GitHub\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp_MarkupCompile.lref
+C:\Users\Melizzle\Documents\GitHub\IntroToCSharp\IntroToCSharp\obj\Debug\MainWindow.baml
+C:\Users\Melizzle\Documents\GitHub\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.g.resources
+C:\Users\Melizzle\Documents\GitHub\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.Properties.Resources.resources
+C:\Users\Melizzle\Documents\GitHub\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.csproj.GenerateResource.Cache
